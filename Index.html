@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="favicon.ico" type="image/png">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>Морской бой</title>
+    </head>
+    <body>
+        <!-- Wrapper start -->
+        <div id="wrapper">
+            <!-- Header start -->
+            <header>
+                <h1 id="task">Морской бой</h1> 
+                <div id="step">Ваш ход...</div>
+            </header>
+            <!-- Header end -->
+
+            <!-- Main start -->
+            <main>
+                <section id="menu">
+                    <h3 id="menu-info">Размеcтите на поле ваши корабли:</h3>
+
+                    <div>
+                        <ol id="ships">
+                            <li><span>1</span>X<img src="image/destroyer_icon.png"></li>
+                            <li><span>2</span>X<img src="image/frigate_icon.png"></li>
+                            <li><span>3</span>X<img src="image/corvette_icon.png"></li>
+                            <li><span>4</span>X<img src="image/landing_icon.png"></li>
+                        </ol>
+                    </div>
+
+                    <button id="auto">Авто</button>
+                    <button id="start">Старт</button>
+                    <button id="restart">Заново</button>
+                    
+                    <div id="info">
+                        <h3 id="info-info2">Подсказка:</h3>
+
+                        <ul>
+                            <li>Правый клик по кораблю вызывает ротацию.</li>
+                            <li>Так размещать корабли нельзя:</li>
+                        </ul>
+
+                        <div id="wrong">
+                            <img src="image/wrong.png">
+                        </div>
+                    </div>
+                </section>
+
+                <section id="myFleet">
+                    <div class="flag"><img src="image/flag-vmf.png"></div>
+                    <table id="myField"></table>
+                </section>
+
+                <section id="pcFleet">
+                    <div class="flag"><img src="image/flag-pirate.jpg"></div>
+                    <table id="pcField"></table>
+                </section>
+            </main>
+            <!-- Main end -->
+        </div>
+        <!-- Wrapper end -->
+        
+
+        <script src="./js/main.js"></script>
+    </body>
+</html>

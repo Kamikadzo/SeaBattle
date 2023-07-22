@@ -1,0 +1,26 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 23px;
+}
+input, textarea {
+    padding: 3px;
+    font-size: 15px;
+}
+button {
+    padding: 5px 10px;
+    font-size: 15px;
+}
+ul, ol {
+    list-style-position: inside;
+    font-size: 20px;
+}
+ol {
+    list-style-type: none;
+}
+table {
+    border-collapse: collapse;
+}

@@ -1,0 +1,102 @@
+body {
+    text-align: center;
+}
+
+/* Wrapper start */
+#wrapper {
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 6px;
+	border: 1px solid #66CEF0;
+    background-image: url("../image/fon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: white;
+}
+
+/* Header start */
+header {
+    background-color: #66CEF0;
+}
+#task {
+    padding: 5px;
+}
+/* Header end */
+
+/* Main start */
+main {
+    border-radius:0px 0px 6px 6px;
+	padding: 3px;
+    display: flex;
+}
+#menu {
+    width: 300px;
+    text-align: left;
+}
+#step {
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+}
+#menu-info {
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+#ships {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+#ships img {
+    margin-left: 10px;  
+}
+.mark {
+    outline: 3px solid black;
+}
+#info ul {
+    margin-bottom: 10px;
+}
+#myFleet {
+    margin-right: 20px;
+}
+#myFleet, #pcFleet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+table {
+    opacity: 95%;
+}
+table td {
+	width: 30px;
+    height: 30px;
+    background-color:  #D1D1D1;
+    border: 1px solid black;
+}
+.flag img {
+    height: 70px;
+}
+.right {
+    background-image: url("../image/ship_icon.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.wrong {
+    background-color: #FEADAB;
+}
+.hit {
+    background-image: url("../image/hit_icon.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.miss {
+    background-image: url("../image/miss_icon.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.unactive {
+    background-image: url("../image/unactive_icon.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+/* Main end */
+/* Wrapper end */
