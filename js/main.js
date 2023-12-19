@@ -166,6 +166,8 @@
             if (checkWin(fleet)) {
                 alert('Поражение!');
                 audio.pause();
+
+                blockTds = false;
             } else {
                 step.textContent = 'Ход компьютера';
                 timerId = setInterval(function() {
@@ -303,18 +305,20 @@
     //кнопка auto, заполняющая моё поле автоматически
     auto.addEventListener('click', function func() {
         if (game == 'off') {
+            deleteField('#myField tr');
+            myTds = createField(myField);
             tds = myTds;
             myFleet = [];
             getShipsObj();
             cleanTds(true);
+            console.log(tds);
             removeMarker()
             cleanLis();
             setShips(myFleet);
             cleanTds();
             currentShip = 'none';
-        } else {
-            auto.removeEventListener('click', func)
-        }
+            console.log(myFleet);
+        }   
     });
 
     // восстанавливает объект ships до начальных значений
